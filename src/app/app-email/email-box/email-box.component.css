@@ -1,0 +1,5 @@
+.email-box {
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+  height: 46vh;
+  background-color: rgba(235, 235, 235, 0.5);
+}

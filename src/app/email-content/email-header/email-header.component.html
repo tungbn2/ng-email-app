@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 text-start mt-2">
+      <h3>{{ email.subject }}</h3>
+      <h6>
+        {{ email.from }}
+        -> {{ email.to }}
+      </h6>
+    </div>
+
+    <div class="col-md-4">
+      <p>{{ email.date | date: "medium" }}</p>
+      <div class="btn-group d-flex">
+        <button class="btn btn-primary">
+          <i class="bx bx-reply"></i> Reply
+        </button>
+        <button class="btn btn-primary ml-1 mr-1">
+          <i class="bx bx-fast-forward"></i> Forward
+        </button>
+        <button class="btn btn-primary">
+          <i class="bx bxs-trash"></i> Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

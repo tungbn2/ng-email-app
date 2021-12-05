@@ -1,0 +1,33 @@
+<div class="app-header d-flex justify-content-between">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/message" routerLinkActive="active"
+        >Message</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contacts" routerLinkActive="active"
+        >Contacts</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/references" routerLinkActive="active"
+        >References</a
+      >
+    </li>
+  </ul>
+
+  <div class="nav-right">
+    <select id="inlineFormCustomSelect" #users (change)="changeUser()">
+      <option value="myself@angular.dev" selected>myself@angular.dev</option>
+      <option value="devguy@angular.dev">devguy@angular.dev</option>
+      <option value="devgal@angular.dev">devgal@angular.dev</option>
+    </select>
+    <button class="btn btn-primary m-2" routerLink="/message">
+      <i class="bx bxs-home"></i>
+    </button>
+    <button class="btn btn-primary">
+      <i class="bx bx-mail-send"></i> New Message
+    </button>
+  </div>
+</div>

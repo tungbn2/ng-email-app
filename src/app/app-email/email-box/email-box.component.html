@@ -1,0 +1,12 @@
+<div class="email-box">
+  <ul class="nav nav-pills flex-column" *ngFor="let folder of folders">
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="[folder]"
+        routerLinkActive="active"
+        >{{ folder }}</a
+      >
+    </li>
+  </ul>
+</div>
